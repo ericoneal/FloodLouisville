@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C0E17DA-95D2-427D-B260-1A25CA4AAEB9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>flood</RootNamespace>
+    <AssemblyName>flood</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap\src\css\bootstrap-modal-bs3patch.css" />
+    <Content Include="bootstrap\src\css\bootstrap-modal.css" />
+    <Content Include="bootstrap\src\css\bootstrapmap.css" />
+    <Content Include="bootstrap\src\images\popup.png" />
+    <Content Include="bootstrap\src\js\bootstrap-modal.js" />
+    <Content Include="bootstrap\src\js\bootstrap-modalmanager.js" />
+    <Content Include="bootstrap\src\js\bootstrapmap.js" />
+    <Content Include="bootstrap\src\js\Collapse.js" />
+    <Content Include="bootstrap\src\js\Dropdown.js" />
+    <Content Include="bootstrap\src\js\Support.js" />
+    <Content Include="css\slider.css" />
+    <Content Include="css\style.css" />
+    <Content Include="data\arcdata\NEWLev.png" />
+    <Content Include="data\arcdata\NEWLev.png.aux.xml" />
+    <Content Include="data\arcdata\NEWnoLEV.png" />
+    <Content Include="data\arcdata\NEWnoLEV.png.aux.xml" />
+    <Content Include="data\downtownNoLev.png" />
+    <Content Include="data\downtownNoLev.png.aux.xml" />
+    <Content Include="data\downtownNoLevOLD.png" />
+    <Content Include="data\downtownWithLev - Copy.png" />
+    <Content Include="data\downtownWithLev.png" />
+    <Content Include="data\downtownWithLev.png.aux.xml" />
+    <Content Include="data\flood.png" />
+    <Content Include="data\NEWLev - Copy.png" />
+    <Content Include="data\NEWLev.png" />
+    <Content Include="data\NEWnoLEV - Copy.png" />
+    <Content Include="data\NEWnoLEV.png" />
+    <Content Include="data\NEWnoLEV.png.aux.xml" />
+    <Content Include="favicon.ico" />
+    <Content Include="images\about.png" />
+    <Content Include="images\about2.png" />
+    <Content Include="images\building.png" />
+    <Content Include="images\buildingWET.png" />
+    <Content Include="images\dam.png" />
+    <Content Include="images\damWET.png" />
+    <Content Include="images\down.png" />
+    <Content Include="images\downClick.png" />
+    <Content Include="images\seal.gif" />
+    <Content Include="images\spinner.gif" />
+    <Content Include="images\up.png" />
+    <Content Include="images\upClick.png" />
+    <Content Include="index.html" />
+    <Content Include="js\bootstrap-slider.js" />
+    <Content Include="js\floodlouisville - Copy.js" />
+    <Content Include="js\floodlouisville.js" />
+    <Content Include="js\ParcelInfo.js" />
+    <Content Include="js\RasterLayer.js" />
+    <Content Include="js\slider\css\slider.css" />
+    <Content Include="js\slider\js\bootstrap-slider.js" />
+    <Content Include="js\test.html" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\arcdata\NEWLev.clr" />
+    <None Include="data\arcdata\NEWLev.pgw" />
+    <None Include="data\arcdata\NEWnoLEV.clr" />
+    <None Include="data\arcdata\NEWnoLEV.pgw" />
+    <None Include="data\downtownNoLev.png.ovr" />
+    <None Include="data\downtownWithLev.pgw" />
+    <None Include="data\downtownWithLev.png.ovr" />
+    <None Include="data\info\arc.dir" />
+    <None Include="data\levee.dbf" />
+    <None Include="data\levee.prj" />
+    <None Include="data\levee.sbn" />
+    <None Include="data\levee.sbx" />
+    <None Include="data\levee.shp" />
+    <None Include="data\levee.shx" />
+    <None Include="data\mask.dbf" />
+    <None Include="data\mask.prj" />
+    <None Include="data\mask.sbn" />
+    <None Include="data\mask.sbx" />
+    <None Include="data\mask.shp" />
+    <None Include="data\mask.shx" />
+    <None Include="data\mosaic1.clr" />
+    <None Include="data\mosaic1.pgw" />
+    <None Include="data\NEWLev.clr" />
+    <None Include="data\NEWLev.pgw" />
+    <None Include="data\NEWnoLEV.clr" />
+    <None Include="data\NEWnoLEV.pgw" />
+    <None Include="js\slider\less\slider.less" />
+    <None Include="kml\floodwall.kml" />
+    <None Include="kml\floodwall.kmz" />
+    <None Include="kml\levee.kmz" />
+    <None Include="kml\levees.kml" />
+    <Content Include="proxy.ashx" />
+    <Content Include="proxy.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51183</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/flood</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
